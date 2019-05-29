@@ -1,0 +1,209 @@
+<!DOCTYPE html> 
+<!-- stoneandthorn@gmail.com -->
+<html>
+	<head>
+		<title>Stone and Thorn</title>
+		<link type='text/css' rel='stylesheet' href='css/quiz_main_style.css'/>
+        <link type='text/css' rel='stylesheet' href='css/page_style.css'/>
+        <link type='text/css' rel='stylesheet' href='css/animation_style.css'/>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans"/>
+       
+        <script src="rellax.js"></script>
+        <script src="st-rellax-script.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Cantarell:700i|Lato:100i&display=swap" rel="stylesheet">
+        
+        <style>
+		html, body{
+			color: #223;
+			font-size: 21pt;
+			margin: 0; padding: 0;
+		}
+        
+            #tag {
+                font-size: 45pt;
+            }    
+		nav{
+			font-size: 21pt;
+			line-height: 1.5em;
+			position: fixed;
+			bottom: 0; left: 0;
+		}
+		nav a{ color: inherit; }
+
+		.col{
+			text-align: center;
+			width: 50%;
+			float: left;
+			box-sizing: border-box;
+		}
+
+		h4{ text-align: center;}
+
+		.container{
+			display: flex;
+			align-items: center;
+			outline: 1px solid #eed;
+			font-size: 42pt;
+			padding: 0 9.5vw; 
+			
+			height: 200vh;
+		}
+        .block1{
+            /* background-image:url(images/IMG_1403-small.jpg); */
+            background: url("images/bkgrnd_1.jpg") fixed right;
+            border-radius: 50%;
+            background-size: contain;
+			color: #eed;
+			line-height: 25vh;
+			text-align: right;
+			/*padding: 0 42pt;*/
+			margin-top: 10vh;
+			height: 600px;
+			width: 600px;
+			position: relative;
+		}
+		.block{
+            background-color: aqua;
+			color: #eed;
+			line-height: 25vh;
+			text-align: right;
+			/*padding: 0 42pt;*/
+			margin-top: 10vh;
+			height: 600px;
+			width: 600px;
+			position: relative;
+		}
+		span{
+			background: none;
+			color: #223;
+			line-height: 25vh;
+			text-align: left;
+			padding: 0 22pt;
+			display: block;
+			width: 90%;
+			position: absolute;
+			top: 0; left: 0;
+			box-sizing: border-box;
+		  }
+                   
+                    a:link {
+                      color: #000000;
+                      
+                    }
+                    a:hover {
+                      font-family: sans-serif;
+                        
+                      
+                    }
+
+                    a:visited {
+                      color: #000000;
+                    }  
+            
+            #background-div {
+                background: url("images/bkgrnd_2.jpg")fixed left;
+                text-align: center;
+                margin-top: -253px;
+                font-family: 'Cantarell', sans-serif;
+                border-radius: 50%;
+                height: 980px;
+			    width: 980px;
+                color: #ffffff;
+			    font-size: 200pt;
+                font-kerning: auto;
+                overflow-x: inherit;
+                transition: all 1.0s;
+                
+            }
+            
+            #background-div:hover {
+                
+                background: url("images/bkgrnd_1.jpg")fixed left;
+                border-radius: 47%;
+                transition: all 0.5s;
+            }
+            
+            .main-div {
+                width: 100%;
+                background-color: #ffffff;
+                font-size: 344px;
+                font-family: 'Lato', sans-serif;
+             
+            }
+            
+                @media only screen and (max-width: 600px) {
+                .main-div {
+                background-color: #ffffff;
+                font-size: 120px;
+                }
+                
+                @media only screen and (max-width: 600px) {
+                #background-div {
+                font-size: 70pt;
+                height: 350px;
+			    width: 90%;
+                margin-top: 123px;
+                text-align: justify;
+                }
+                    
+                    #pic-div {
+                        position: absolute;
+                        left: 100px;
+                        top: 150px;
+                    }    
+                    
+                 
+                    
+                    
+	</style>
+</head>
+    
+<body>
+    
+<div class="main-div">
+   
+    <div class="rellax" id="background-div" data-rellax-speed="-6"> 
+        <p>Streetwear by Art Kids.</p>
+        <img class="rellax" data-rellax-speed="13" src="images/circle-of-thorns.png" width="350px"  alt="">
+    </div>
+    
+    <div class="rellax" data-rellax-speed="-1"  >
+        <img src="images/book2-img7.png" width="90%" alt="">
+    </div>
+    <div class="rellax" data-rellax-speed="5">
+       <a href="https://stone-thorn.square.site/" alt="">Shop</a>
+    </div>
+    
+    <div class="rellax" data-rellax-speed="4" >
+      <a href="book1.html" alt="" >Books</a>
+    </div>
+    
+    <div class="rellax" data-rellax-speed="4" >
+      <a href="https://www.instagram.com/stoneandthorn/" alt="" target="_blank">Connect</a>
+    </div>
+    
+    <div class="rellax" data-rellax-speed="3" id="tag">
+      Love + Balance + Rhythm
+    </div>
+   
+</div>
+
+<script>
+ 
+  var rellax = new Rellax('.rellax');
+</script>
+<script>
+ 
+  var rellax = new Rellax('.rellax', {
+    speed: -2,
+    center: false,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false
+  });
+</script>
+   
+    
+</body>
+</html>    

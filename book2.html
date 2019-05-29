@@ -1,0 +1,289 @@
+<!DOCTYPE html> 
+<!-- "water is boss.." stoneandthorn@gmail.com -->
+<html>
+	<head>
+		<title>BOOK 2: Stone and Thorn</title>
+		<link type='text/css' rel='stylesheet' href='css/quiz_main_style.css'/>
+        <link type='text/css' rel='stylesheet' href='css/page_style.css'/>
+        <link type='text/css' rel='stylesheet' href='css/animation_style.css'/>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans"/>
+       
+        <script src="rellax.js"></script>
+        <script src="st-rellax-script.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Cantarell:700i|Lato:100i&display=swap" rel="stylesheet">
+        
+        <style>
+		html, body{
+			color: #223;
+			font-size: 21pt;
+			margin: 0; padding: 0;
+		}
+            h1 {
+                font-size: 12pt;
+                text-align: center;
+                margin-bottom: -122px;
+            }    
+		.btn{
+			font-size: 14pt;
+			position: fixed;
+            top: 3px;
+            left: 2%;
+            width: 43px;
+            height: 43px;
+            border-radius: 50%;
+            background-color: #000000;
+            color: aquamarine;
+            
+		}
+		.btn2{
+			font-size: 14pt;
+			position: fixed;
+            top: 3px;
+            left: 9%;
+            width: 43px;
+            height: 43px;
+            border-radius: 50%;
+            margin-left: 4%;
+            background-color: #000000;
+            color: aquamarine;
+            
+            transition: all 0.3s;
+            
+		}
+            
+            .btn2:hover{
+			font-size: 29pt;
+			position: fixed;
+            top: 3px;
+            left: 6.3%;
+            width: 63px;
+            height: 63px;
+            border-radius: 50%;
+            margin-left: 4%;
+            background-color: #666666;
+            color: aquamarine;
+            transition: all 0.3s;
+            
+		}
+
+		.btn:hover{
+			font-size: 29pt;
+			position: fixed;
+            top: 3px;
+            left: 2.3%;
+            width: 63px;
+            height: 63px;
+            border-radius: 50%;
+            background-color: #666666;
+            color: aquamarine;
+            transition: all 0.3s;
+            
+		}
+
+		h4{ text-align: center;}
+
+		.container{
+			display: flex;
+			align-items: center;
+			outline: 1px solid #eed;
+			font-size: 42pt;
+			padding: 0 9.5vw; 
+			
+			height: 200vh;
+		}
+        .block1{
+            /* background-image:url(images/IMG_1403-small.jpg); */
+            background: url("images/bkgrnd_1.jpg") fixed right;
+            border-radius: 50%;
+            background-size: contain;
+			color: #eed;
+			line-height: 25vh;
+			text-align: right;
+			/*padding: 0 42pt;*/
+			margin-top: 10vh;
+			height: 300px;
+			width: 300px;
+			position: relative;
+		}
+		.block{
+            background-color: aqua;
+			color: #eed;
+			line-height: 25vh;
+			text-align: right;
+			/*padding: 0 42pt;*/
+			margin-top: 10vh;
+			height: 600px;
+			width: 600px;
+			position: relative;
+		}
+		span{
+			background: none;
+			color: #223;
+			line-height: 25vh;
+			text-align: left;
+			padding: 0 22pt;
+			display: block;
+			width: 90%;
+			position: absolute;
+			top: 0; left: 0;
+			box-sizing: border-box;
+		  }
+                   
+                    a:link {
+                      color: #000000;
+                      
+                    }
+                    a:hover {
+                      font-family: sans-serif;
+                        
+                      
+                    }
+
+                    a:visited {
+                      color: #000000;
+                    }  
+            
+            #background-div {
+                background-image:url(images/moon1.png);
+                background-color: #666666;
+                text-align: center;
+                margin-top: -253px;
+                font-family: 'Cantarell', sans-serif;
+                border-radius: 50%;
+                height: 400px;
+			    width: 400px;
+                color: #ffffff;
+			    font-size: 200pt;
+                font-kerning: auto;
+                overflow-x: inherit;
+                transition: all 1.0s;
+                
+            }
+            
+            #background-div:hover {
+                background-color: darkred;
+                transition: all 0.5s;
+            }
+            
+            .main-div {
+                width: 100%;
+                background-color: #ffffff;
+                font-size: 344px;
+                font-family: 'Lato', sans-serif;
+             
+            }
+            
+                @media only screen and (max-width: 600px) {
+                .main-div {
+                background-color: #ffffff;
+                font-size: 120px;
+                }
+                
+                @media only screen and (max-width: 600px) {
+                #background-div {
+                font-size: 70pt;
+                height: 250px;
+			    width: 250px;
+                margin-top: 123px;
+                text-align: justify;
+                }
+                    
+                    #pic-div {
+                        position: absolute;
+                        left: 100px;
+                        top: 150px;
+                    }    
+                    
+                 
+                    
+                    
+	</style>
+</head>
+    
+<body>
+    <h1>Book (ii)</h1>
+<div class="main-div">
+    
+    <button class="btn" onclick="btnBook1()">(i)</button> <br>
+    <button class="btn2" onclick="btnBook2()">(ii)</button>
+    
+    <div class="rellax" id="background-div" data-rellax-speed="-6"> 
+        <img class="rellax" data-rellax-speed="13" src="images/circle-of-thorns.png" width="350px"  alt="">
+        
+    </div>
+    
+    <div class="rellax" data-rellax-speed="-1"  >
+        <img src="images/book2-img0.jpg" width="60%" alt="">
+        
+        <img src="images/book2-img00.png" width="60%" alt="">
+        
+        <img src="images/book2-img1.jpg" width="60%" alt="">
+        
+        <img src="images/book2-img2.jpg" width="60%" alt="">
+        
+        <img src="images/book2-img3.png" width="60%" alt="">
+
+        <img src="images/book2-img4.jpg" width="60%" alt="">
+        
+        <img src="images/book2-img5.jpg" width="60%" alt="">
+        
+        <img src="images/book2-img6.jpg" width="60%" alt="">
+        
+        <img src="images/book2-img7.jpg" width="60%" alt="">
+        
+        <img src="images/book2-img8.jpg" width="60%" alt="">
+        
+        <img src="images/book2-img9.jpg" width="60%" alt="">
+        
+        <img src="images/book2-img10.JPG" width="60%" alt="">
+        
+        <img src="images/book2-img11.jpg" width="60%" alt="">
+        
+        
+        
+    </div>
+    <div class="rellax" data-rellax-speed="5">
+       <a href="https://stone-thorn.square.site/" alt="">Shop</a>
+    </div>
+    
+    <div class="rellax" data-rellax-speed="4" >
+      <a href="https://www.instagram.com/stoneandthorn/" alt="" target="_blank">Connect</a>
+    </div>
+    
+    <div class="rellax" data-rellax-speed="3" >
+      <a href="index.html" alt="">Home</a>
+    </div>
+   
+</div>
+    
+<script>
+function btnBook1() {
+  window.open("book1.html");
+}
+</script>
+
+    <script>
+function btnBook2() {
+  window.open("book2.html");
+}
+</script>
+    
+<script>
+
+  var rellax = new Rellax('.rellax');
+</script>
+<script>
+ 
+  var rellax = new Rellax('.rellax', {
+    speed: -2,
+    center: false,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false
+  });
+</script>
+   
+    
+</body>
+</html>    
