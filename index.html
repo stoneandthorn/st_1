@@ -1,209 +1,129 @@
-<!DOCTYPE html> 
-<!-- stoneandthorn@gmail.com -->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Stone and Thorn</title>
-		<link type='text/css' rel='stylesheet' href='css/quiz_main_style.css'/>
-        <link type='text/css' rel='stylesheet' href='css/page_style.css'/>
-        <link type='text/css' rel='stylesheet' href='css/animation_style.css'/>
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans"/>
-       
-        <script src="rellax.js"></script>
-        <script src="st-rellax-script.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Cantarell:700i|Lato:100i&display=swap" rel="stylesheet">
-        
-        <style>
-		html, body{
-			color: #223;
-			font-size: 21pt;
-			margin: 0; padding: 0;
-		}
-        
-            #tag {
-                font-size: 45pt;
-            }    
-		nav{
-			font-size: 21pt;
-			line-height: 1.5em;
-			position: fixed;
-			bottom: 0; left: 0;
-		}
-		nav a{ color: inherit; }
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		.col{
-			text-align: center;
-			width: 50%;
-			float: left;
-			box-sizing: border-box;
-		}
+	<title>Stone and Thorn</title>
 
-		h4{ text-align: center;}
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-		.container{
-			display: flex;
-			align-items: center;
-			outline: 1px solid #eed;
-			font-size: 42pt;
-			padding: 0 9.5vw; 
-			
-			height: 200vh;
-		}
-        .block1{
-            /* background-image:url(images/IMG_1403-small.jpg); */
-            background: url("images/bkgrnd_1.jpg") fixed right;
-            border-radius: 50%;
-            background-size: contain;
-			color: #eed;
-			line-height: 25vh;
-			text-align: right;
-			/*padding: 0 42pt;*/
-			margin-top: 10vh;
-			height: 600px;
-			width: 600px;
-			position: relative;
-		}
-		.block{
-            background-color: aqua;
-			color: #eed;
-			line-height: 25vh;
-			text-align: right;
-			/*padding: 0 42pt;*/
-			margin-top: 10vh;
-			height: 600px;
-			width: 600px;
-			position: relative;
-		}
-		span{
-			background: none;
-			color: #223;
-			line-height: 25vh;
-			text-align: left;
-			padding: 0 22pt;
-			display: block;
-			width: 90%;
-			position: absolute;
-			top: 0; left: 0;
-			box-sizing: border-box;
-		  }
-                   
-                    a:link {
-                      color: #000000;
-                      
-                    }
-                    a:hover {
-                      font-family: sans-serif;
-                        
-                      
-                    }
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" href="css/main.css">
 
-                    a:visited {
-                      color: #000000;
-                    }  
-            
-            #background-div {
-                background: url("images/bkgrnd_2.jpg")fixed left;
-                text-align: center;
-                margin-top: -253px;
-                font-family: 'Cantarell', sans-serif;
-                border-radius: 50%;
-                height: 980px;
-			    width: 980px;
-                color: #ffffff;
-			    font-size: 200pt;
-                font-kerning: auto;
-                overflow-x: inherit;
-                transition: all 1.0s;
-                
-            }
-            
-            #background-div:hover {
-                
-                background: url("images/bkgrnd_1.jpg")fixed left;
-                border-radius: 47%;
-                transition: all 0.5s;
-            }
-            
-            .main-div {
-                width: 100%;
-                background-color: #ffffff;
-                font-size: 344px;
-                font-family: 'Lato', sans-serif;
-             
-            }
-            
-                @media only screen and (max-width: 600px) {
-                .main-div {
-                background-color: #ffffff;
-                font-size: 120px;
-                }
-                
-                @media only screen and (max-width: 600px) {
-                #background-div {
-                font-size: 70pt;
-                height: 350px;
-			    width: 90%;
-                margin-top: 123px;
-                text-align: justify;
-                }
-                    
-                    #pic-div {
-                        position: absolute;
-                        left: 100px;
-                        top: 150px;
-                    }    
-                    
-                 
-                    
-                    
-	</style>
+	<!--[if lt IE 9]>
+	<script src="js/_lib/html5shiv.js"></script>
+	<![endif]-->
+
 </head>
-    
-<body>
-    
-<div class="main-div">
-   
-    <div class="rellax" id="background-div" data-rellax-speed="-6"> 
-        <p>Streetwear by Art Kids.</p>
-        <img class="rellax" data-rellax-speed="13" src="images/circle-of-thorns.png" width="350px"  alt="">
-    </div>
-    
-    <div class="rellax" data-rellax-speed="-1"  >
-        <img src="images/book2-img7.png" width="90%" alt="">
-    </div>
-    <div class="rellax" data-rellax-speed="5">
-       <a href="https://stone-thorn.square.site/" alt="">Shop</a>
-    </div>
-    
-    <div class="rellax" data-rellax-speed="4" >
-      <a href="book1.html" alt="" >Books</a>
-    </div>
-    
-    <div class="rellax" data-rellax-speed="4" >
-      <a href="https://www.instagram.com/stoneandthorn/" alt="" target="_blank">Connect</a>
-    </div>
-    
-    <div class="rellax" data-rellax-speed="3" id="tag">
-      Love + Balance + Rhythm
-    </div>
-   
-</div>
 
-<script>
- 
-  var rellax = new Rellax('.rellax');
-</script>
-<script>
- 
-  var rellax = new Rellax('.rellax', {
-    speed: -2,
-    center: false,
-    wrapper: null,
-    round: true,
-    vertical: true,
-    horizontal: false
-  });
-</script>
-   
-    
+<body>
+	<div id="outerWrapper">
+
+		<header>
+			
+			<nav>
+			</nav>
+		</header>
+
+		<main>
+			<div></div>
+			
+			<h1>STONE AND THORN</h1>
+
+			<section id="hero" STYLE="background-color:transparent">
+				<iframe id="myframe" onload="myFunction()" src="wasm\stone_thorn_header.html" 
+				width="100%" height="250px" overflow="visible" allowfullscreen="true" ALLOWTRANSPARENCY="true" STYLE="background-color:transparent" frameborder="0" ></iframe>
+			</section>
+
+			<section  class="main_content" id="contentFoo">
+				<img src="images/the_black_jack_01.png" width="45%">
+				<img src="images/the_black_jack_02.png" width="45%">
+				<img src="images/the_black_jack_01_back.png" width="45%"><br>
+				<p>03 The Black Jacket: <br> Inspired by American classic moto jackets.
+					The jacket has a soft cotton liner, inside pockets,
+					and is made of high quality mid-weight leather and suede.
+					Finished with sleeve zippers, 3d printed Rhodium-metal
+					accents and detailed embroidery.  </p>
+				<script src="https://gumroad.com/js/gumroad.js"></script>
+				<a class="gumroad-button" href="https://gum.co/the-blk-jacket?wanted=true" target="_blank">Order</a>
+			</br><br>
+
+			<div class="blackdivider"></div>
+
+				<img src="images/05_block_jacket_01.png" width="45%">
+				<img src="images/05_block_jacket_02.png" width="45%">
+				<img src="images/05_block_jacket.png" width="45%"><br>
+				<p>05 Block Jacket: <br> The jacket has a soft quilted cotton liner, inside pocket,
+					and is made of high quality heavy-weight leather and cotton canvas.
+					Finished with sleeve zippers and detailed embroidery. </p>
+			
+				<a class="gumroad-button" href="https://gum.co/gXKxM?wanted=true" target="_blank">Order</a>
+			</br><br>
+
+			<div class="blackdivider"></div>
+
+				<img src="images/01_shoe_0.png" width="45%">
+				<img src="images/01_shoe_2.png" width="45%">
+				<img src="images/01_shoe_3.png" width="45%"><br>
+				<p>01-f Stone: <br> The entire mid-top body,
+					tongue and strap are made of heavy high quality suede. Finished with a vulcanized outer sole, custom screen
+					printed inner sole, and side panel embroidery. <br>
+					Praline Pantone 17-1524TPX (accents)
+					Oxblood Red Pantone 19-1524TPX (strap, body-heel)
+					Total Eclipse 19-4010TPX (ankle, body, tag)
+					Ash Pantone 16-3802TPX (body, tongue
+					Frost Gray Pantone 17-0000TPX (sole)</p>
+	
+				<a class="gumroad-button" href="https://gum.co/iFref?wanted=true" target="_blank">Order</a>
+			</br><br>
+
+			<div class="blackdivider"></div>
+
+				<img src="images/06-windbreaker.png" width="45%">
+				<img src="images/06-windbreaker_02.png" width="45%">
+				<img src="images/06-windbreaker_03.png" width="45%"><br>
+				<p>06 Windbreaker: <br> The jacket has a cotton mesh liner, outer pockets,
+					and is made of high-thread mid-weight water resistant  poly material.
+					Finished with hem zippers and place graphics. </p>
+					
+				<a class="gumroad-button" href="https://gum.co/eqJLQ?wanted=true" target="_blank">Order</a>
+			</br><br>
+
+			<div class="blackdivider"></div>
+
+			</section>
+
+		
+		
+			<section id="contentBar">
+				<a href="https://www.instagram.com/stoneandthorn/" target="blank"><h1>Media</h1></a>
+				<a href="mailto:stoneandthorn@gmail.com" ><h1>Contact</h1></a>
+				
+			</section>
+
+		</main>
+
+		<footer>
+		</footer>
+
+	</div>
+	<script src="https://gumroad.com/js/gumroad-embed.js"></script>
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("myframe");
+		  var y = (x.contentWindow || x.contentDocument);
+		  if (y.document)y = y.document;
+		  y.body.style.backgroundColor = "white";
+		}
+		</script>
+	
+	<script src="js/local.js"></script>
+
+<!-- love balance rhythm - 2020 -->
+
 </body>
-</html>    
+</html>
